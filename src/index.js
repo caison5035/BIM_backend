@@ -1,7 +1,8 @@
 const app = require('./bin/app');
 const config = require('./config/config');
 const mongoose = require('mongoose');
-
+const cloudinary = require('cloudinary').v2;
+var path = require('path');
 mongoose.Promise = global.Promise;
 
 let server;
@@ -38,5 +39,8 @@ process.on('SIGTERM', () => {
     server.close();
   }
 });
+
+// Setting the root path for the project
+global.appRoot = path.resolve(__dirname);
 
 mongoose.connect(config.DB_URL, config.DB_OPTIONS).then(() => connectionSuccessHandler());

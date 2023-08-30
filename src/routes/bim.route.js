@@ -4,6 +4,8 @@ const router = express.Router();
 
 router.post('/upload', bimController.upload );
 
-router.post('/tag', bimController.tag );
+router.get('/search', bimController.search );
+
+router.get('/list', bimController.list );
 
 module.exports = router;

@@ -4,7 +4,7 @@ const router = express.Router();
 
 const routes = [
     {
-        path : '',
+        path : '/bim',
         route : bimRoute
     }
 ];
