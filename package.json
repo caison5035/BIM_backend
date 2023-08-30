@@ -1,0 +1,24 @@
+{
+  "name": "bim-integration-portal-server",
+  "version": "1.0.0",
+  "description": "A portal where user can upload BIM objects and Tag them on a Map UI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Caison",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "http-status": "^1.6.2",
+    "joi": "^17.10.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.5.0",
+    "nodemon": "^3.0.1"
+  }
+}
