@@ -15,6 +15,7 @@ const bimSchema = mongoose.Schema(
           type: Number,
           required: true,
         },
+     
         latitude: {
           type: Number,
           default: false,
