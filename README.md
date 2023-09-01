@@ -1,6 +1,7 @@
-# Project Name
+# BIM evaluation backend
 
-Description of your Node.js project.
+This project allows users to upload files and associate them with specific locations on a map.
+
 
 ## Table of Contents
 - [Project Structure](#project-structure)
